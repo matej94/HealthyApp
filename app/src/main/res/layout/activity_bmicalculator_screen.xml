@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/heightEt"
-        android:hint="Enter height"/>
+        android:hint="Enter height in m"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/weightEt"
-        android:hint="Enter weight"
+        android:hint="Enter weight in kg"
         android:layout_below="@id/heightEt"/>
     <Button
         android:layout_width="match_parent"
@@ -29,7 +29,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/resultTv"
         android:layout_below="@id/calculateBtn"
-        android:hint="BMI result"/>
+        android:hint="BMI result"
+        android:textAlignment="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/bmiIv"
+        android:background="@mipmap/bmiscale"
+        android:layout_below="@id/resultTv"
+        android:layout_marginBottom="10dp"
+
+        />
 
 
 </RelativeLayout>

@@ -5,6 +5,6 @@ public interface BMICalculatorContract {
 
     }
     interface Presenter{
-
+        String calculateBMIClicked(String height, String weight);
     }
 }
