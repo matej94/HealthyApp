@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.healthyapp.contracts.MainContract;
-import com.example.healthyapp.MainPresenter;
+import com.example.healthyapp.presenter.MainPresenter;
 import com.example.healthyapp.R;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {

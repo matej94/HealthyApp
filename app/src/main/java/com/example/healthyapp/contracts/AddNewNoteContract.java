@@ -5,6 +5,7 @@ public interface AddNewNoteContract {
 
     }
     interface Presenter{
+        void addNoteClicked(String title, String description, String date);
 
     }
 }

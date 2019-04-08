@@ -1,4 +1,4 @@
-package com.example.healthyapp;
+package com.example.healthyapp.presenter;
 
 import com.example.healthyapp.contracts.MainContract;
 
