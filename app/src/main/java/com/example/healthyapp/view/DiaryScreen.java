@@ -11,8 +11,9 @@ import android.widget.ListView;
 import com.example.healthyapp.R;
 import com.example.healthyapp.contracts.DiaryContract;
 import com.example.healthyapp.model.Note;
-import com.example.healthyapp.model.NoteDatabaseManager;
+import com.example.healthyapp.database.NoteDatabaseManager;
 import com.example.healthyapp.presenter.DiaryPresenter;
+import com.example.healthyapp.view.adapter.NoteAdapter;
 
 import io.realm.OrderedRealmCollection;
 

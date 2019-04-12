@@ -1,7 +1,7 @@
 package com.example.healthyapp.presenter;
 
 import com.example.healthyapp.contracts.DiaryContract;
-import com.example.healthyapp.model.INoteDatabaseManager;
+import com.example.healthyapp.database.INoteDatabaseManager;
 import com.example.healthyapp.model.Note;
 import io.realm.OrderedRealmCollection;
 

@@ -1,4 +1,6 @@
-package com.example.healthyapp.model;
+package com.example.healthyapp.database;
+
+import com.example.healthyapp.model.Note;
 
 import io.realm.OrderedRealmCollection;
 

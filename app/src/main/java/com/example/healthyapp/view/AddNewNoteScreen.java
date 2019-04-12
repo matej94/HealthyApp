@@ -9,21 +9,23 @@ import android.widget.EditText;
 
 import com.example.healthyapp.R;
 import com.example.healthyapp.contracts.AddNewNoteContract;
-import com.example.healthyapp.model.NoteDatabaseManager;
+import com.example.healthyapp.database.NoteDatabaseManager;
 import com.example.healthyapp.presenter.AddNewNotePresenter;
+import com.example.healthyapp.presenter.MainPresenter;
 
 public class AddNewNoteScreen extends AppCompatActivity implements AddNewNoteContract.View {
     EditText TitleEt, DescriptionEt;
     DatePicker DatePicker;
     Button AddNoteBtn;
     private AddNewNoteContract.Presenter presenter;
+    private MainPresenter mPresenter;
     String selectedDate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_note_screen);
         initView();
-        presenter = new AddNewNotePresenter(this, NoteDatabaseManager.getDatabaseInstance());
+        presenter = new AddNewNotePresenter(this, NoteDatabaseManager.getDatabaseInstance(),mPresenter);
     }
     private void initView(){
         TitleEt = findViewById(R.id.titleEt);

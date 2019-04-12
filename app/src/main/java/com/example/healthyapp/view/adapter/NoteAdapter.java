@@ -1,4 +1,4 @@
-package com.example.healthyapp.view;
+package com.example.healthyapp.view.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +17,7 @@ public class NoteAdapter extends RealmBaseAdapter<Note> implements ListAdapter {
         TextView TitleTv, DescriptionTv, DateTv;
     }
 
-    NoteAdapter(OrderedRealmCollection<Note> realmResults) {
+    public NoteAdapter(OrderedRealmCollection<Note> realmResults) {
         super(realmResults);
     }
 

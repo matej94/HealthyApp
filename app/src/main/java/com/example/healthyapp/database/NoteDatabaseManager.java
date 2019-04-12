@@ -1,8 +1,9 @@
-package com.example.healthyapp.model;
+package com.example.healthyapp.database;
+
+import com.example.healthyapp.model.Note;
 
 import io.realm.OrderedRealmCollection;
 import io.realm.Realm;
-import io.realm.RealmResults;
 
 public class NoteDatabaseManager implements INoteDatabaseManager {
     private Realm realm;
